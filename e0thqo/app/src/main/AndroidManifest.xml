@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.wsg">
+
+    <!--读取Log -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!--允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--获取GSM（2g）、WCDMA（联通3g）等网络状态的信息  -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!--获取sd卡写的权限，用于文件上传和下载-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--允许读取手机状态 用于创建BmobInstallation-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--获取手机录音机使用权限，听写、识别、语义理解需要用到此权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!--允许程序改变网络连接状态 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!--读取联系人权限，上传联系人需要用到此权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!--短信权限-->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!--窗口权限-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!--百度地图权限-->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 这个权限用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- 这个权限用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!-- SD卡读取权限，用户写入离线定位数据-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+    <application
+        android:name="com.example.wsg.application.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.example.wsg.ui.SplashActivity"
+            android:theme="@style/NoActivityFullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--设置-->
+        <activity
+            android:name="com.example.wsg.ui.SettingActivity"
+            android:label="@string/text_setting" />
+
+        <!--主页-->
+        <activity android:name="com.example.wsg.MainActivity" />
+
+        <!--引導頁-->
+        <activity
+            android:name="com.example.wsg.ui.GuideActivity"
+            android:theme="@style/NoActivityFullscreen" />
+
+        <!--登录-->
+        <activity
+            android:name="com.example.wsg.ui.LoginActivity"
+            android:label="@string/text_login" />
+
+        <!--注册-->
+        <activity
+            android:name="com.example.wsg.ui.RegisteredActivity"
+            android:label="@string/text_registered" />
+
+        <!--忘记密码-->
+        <activity
+            android:name="com.example.wsg.ui.ForgetPasswordActivity"
+            android:label="@string/text_forget_password" />
+
+        <!--快递查询-->
+        <activity
+            android:name="com.example.wsg.ui.CourierActivity"
+            android:label="@string/text_express_query" />
+
+        <!--归属地查询-->
+        <activity
+            android:name="com.example.wsg.ui.PhoneActivity"
+            android:label="@string/text_belonging_query" />
+
+        <activity android:name=".ui.TodayActivity"
+            android:label="@string/text_today"/>
+
+        <!--下载-->
+        <activity
+            android:name="com.example.wsg.ui.UpdatActivity"
+            android:label="@string/text_download_update" />
+
+        <!--二维码-->
+        <activity
+            android:name="com.example.wsg.ui.QrCodeActivity"
+            android:label="@string/text_my_qrcode" />
+
+        <!--我的位置-->
+        <activity
+            android:name="com.example.wsg.ui.LocationActivity"
+            android:label="@string/text_my_location" />
+
+        <!--关于软件-->
+        <activity
+            android:name="com.example.wsg.ui.AboutActivity"
+            android:label="@string/text_about_app" />
+
+        <!--新闻详情-->
+        <activity android:name="com.example.wsg.ui.WebViewActivity" />
+
+        <!-- 短信服务-->
+        <service android:name="com.example.wsg.service.SmsService" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="KIXaj3dCXGF2FsBGGyDoOl1vEMNeq8Wn" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"/>
+
+    </application>
+
+</manifest>

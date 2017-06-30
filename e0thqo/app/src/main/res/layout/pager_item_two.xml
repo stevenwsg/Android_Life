@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/guide_concise"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_pager_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="没有什么能够阻挡，你对自由的向往"
+        android:textSize="50sp"/>
+
+
+</LinearLayout>
