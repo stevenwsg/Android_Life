@@ -67,3 +67,11 @@ BaiduMap
 节省自己实现这些业务去学习的成本
 场景 ：
 可以应用在需要广播监听和弹窗的APP
+
+
+![Image text](https://raw.githubusercontent.com/stevenwsg/img-folder/master/%E7%94%9F%E6%B4%BB%E5%8A%A9%E6%89%8B/%E5%8D%9A%E5%AE%A2Screenshot_20170728-232935.png)
+![Image text](https://raw.githubusercontent.com/stevenwsg/img-folder/master/%E7%94%9F%E6%B4%BB%E5%8A%A9%E6%89%8B/%E5%8D%9A%E5%AE%A2Screenshot_20170728-232947.png)
+![Image text](https://raw.githubusercontent.com/stevenwsg/img-folder/master/%E7%94%9F%E6%B4%BB%E5%8A%A9%E6%89%8B/%E5%8D%9A%E5%AE%A2Screenshot_20170728-232958.png)
+![Image text](https://raw.githubusercontent.com/stevenwsg/img-folder/master/%E7%94%9F%E6%B4%BB%E5%8A%A9%E6%89%8B/%E5%8D%9A%E5%AE%A2Screenshot_20170728-233011.png)
+![Image text](https://raw.githubusercontent.com/stevenwsg/img-folder/master/%E7%94%9F%E6%B4%BB%E5%8A%A9%E6%89%8B/%E5%8D%9A%E5%AE%A2Screenshot_20170728-233019.png)
+![Image text](https://raw.githubusercontent.com/stevenwsg/img-folder/master/%E7%94%9F%E6%B4%BB%E5%8A%A9%E6%89%8B/%E5%8D%9A%E5%AE%A2Screenshot_20170728-233026.png)
